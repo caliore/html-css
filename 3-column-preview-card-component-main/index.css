@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+html, body {
+    height: 100%;
+}
+
+
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    width: 800px;
+    
+}
+   
+
+
+.box1 {
+    background-color: #355070;
+    display: flex;
+    flex: 1 0;
+    flex-direction: column;
+    padding: 38px;
+    gap: 35px;
+
+}
+
+.box2 {
+    background-color: #6d597a;
+    display: flex;
+    flex-direction: column;
+    padding: 38px;
+    flex: 1 0;
+    gap: 35px;
+
+}
+
+.box3 {
+    background-color: #b56576;
+    display: flex;
+    flex-direction: column;
+    padding: 38px;
+    flex: 1 0 ;
+    gap: 35px;
+
+
+}
+.btn {
+    margin-top: auto;
+}
+.btn > button {
+    padding: 12px 24px;
+    border-radius: 50px;
+    border: 0;
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+
+
+}
+
+
+.box1 > .btn > button {
+    color:#355070;
+    
+
+}
+
+.box2 > .btn > button {
+    color:#6d597a;
+    background-color: rgb(255, 255, 255);
+
+}
+.box3 > .btn > button {
+    color: #b56576;
+    background-color: rgb(255, 255, 255);
+}
+
+.text {
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    
+}
+
+.name {
+    font-size: 24px;
+}
+
+.logo > img {
+    width: 65px;
+    height: 65px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@media screen and ( max-width: 600px ) {
+.box1, .box2, .box3 {
+
+    flex-direction: row;
+
+}
+
+.logo > img {
+    align-self: center
+}
+};
+
+    
