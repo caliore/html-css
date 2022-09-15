@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,900&display=swap');
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ece4db;
+
+    
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+    border-radius: 12px;
+    overflow: hidden;
+    flex: 0 1 600px;
+}
+
+.image {
+    display: flex;
+    width: 50%;
+}
+
+.image > img {
+    max-width: 100%;
+    max-height: 100%;
+    /* height: auto; */
+
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.933);
+    padding: 35px;
+    justify-content: space-between;
+    width: 50%;
+    
+}
+
+ p {
+    text-align: left;
+    font-weight: 700;
+    font-size: 28px;
+    word-break:normal;
+    
+    
+}
+
+.content {
+    color: rgb(143, 143, 143);
+    line-height: 25px;
+}
+
+li {
+   list-style-type: none;
+
+}
+
+.price {
+    text-align: left;
+}
+
+.price ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row;
+    margin-left: 0;
+    padding-left: 0;
+    text-align: left;
+
+    
+
+}
+
+ul > li:first-of-type {
+    color: hsl(158, 36%, 37%);
+    font-size: 32px;
+    font-family: 'Fraunces', serif;
+
+}
+
+ul > li:last-of-type {
+    text-decoration: line-through;
+    color: rgb(64, 64, 64);
+    font-size: 14px;
+   
+}
+
+.btn button {
+    justify-content: center;
+    width: 100%;
+}
+
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border-radius: 5px;
+    padding: 12px 14px;
+    border: 0;
+
+}
+
+span {
+    color: rgb(143, 143, 143);
+    letter-spacing: 5px;
+
+    
+}
