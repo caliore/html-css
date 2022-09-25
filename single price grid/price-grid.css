@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400&display=swap');html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+
+    
+    
+    
+}
+
+body {
+    background-color: #f2f2f2 ;
+    color: #fbfffc;
+    font-size: 16px;
+    display: flex;
+}
+
+
+
+.grid-container {
+    min-height: auto;
+    display: grid;
+    max-width: 700px;
+    margin: 0 auto;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:  auto auto;
+    align-content: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    grid-template-columns: 1fr;
+    grid-column: 1/ span 2;
+
+}
+
+
+.grid-col {
+    padding: 45px;
+}
+
+/* Join our community */
+
+.grid-container div:first-child {
+    background-color: #ffffff;
+   grid-column: 1/ span 2;
+   color: black;
+
+}
+
+.grid-container div:first-child h2 {
+    color: #62bcbd;
+    
+}
+.grid-container div:first-child p:first-of-type {
+    color:#bcdd3d
+}
+.grid-container div:first-child p:last-of-type {
+    color: hsl(218, 22%, 67%);
+}
+
+
+
+/* Monthly Subscription */
+.grid-container div:nth-child(2)  {
+    background-color: #2bb3b1;
+    
+    } 
+
+.grid-container div:nth-child(2) p:first-of-type {
+    font-size: 25px;
+    font-weight: 700;
+} 
+
+.grid-container div:nth-child(2) p:first-of-type span{
+    color: hsl(180, 7%, 94%);
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 16px;
+    opacity: 0.5;
+    
+}
+
+.grid-container div:nth-child(2) p:last-of-type {
+    color: hsl(204, 43%, 93%);
+}
+
+
+button {
+    background-color: #bcdd3d;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 30px;
+    font-family: inherit;
+    box-shadow: 2px 5px 9px 2px #82898d4b;
+
+   
+}
+
+/* Why Us */
+
+.grid-container div:nth-child(3)  {
+    background-color: #4abebd;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    margin-bottom: 2px;
+    color: #daecf1;
+    list-style: none;
+    opacity: 0.8;
+
+}
+
+
+/* Mobile responsive */
+
+
+@media (min-width: 40em) {
+    .grid-container {
+        grid-template-columns: repeat(2,1fr);
+        /* grid-template-rows:  1 /span 2; */
+    }
+
+ 
+    
+}
+
+
+
+@media (max-width: 375px) {
+  
+
+    .grid-col {
+        grid-column: span 2;
+    }
+}
