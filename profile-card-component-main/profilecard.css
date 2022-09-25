@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    justify-items: center;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-size: 70%, 65%;
+    background-position: -25% -60vh, 50vw 50vh;
+    background-attachment: fixed;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card{
+    height: auto;
+    max-width: 350px;
+    border-radius: 16px;
+    overflow: hidden;
+    position: absolute;
+    flex: 1;
+}
+
+/* Card pattern part */
+
+.top {
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+}
+
+/* White botton part */
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    padding-bottom: 15px;
+    background-color: white;
+    min-height: 230px;
+
+ 
+}
+
+/* Avatar */
+.ava {
+
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 22%;
+    left: 38%;
+    border: 3px solid white;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+/* Text */
+
+p:first-of-type {
+    font-weight: 700;
+}
+
+p:last-of-type {
+    color: rgb(162, 162, 162);
+
+}
+
+.text {
+    margin-top: 55px ;
+    padding-top: 25px;
+}
+
+/* Stats */
+
+.stats {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    gap: 50px;
+}
+
+.stat p {
+    color: rgb(162, 162, 162);
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+
+/* Divider */
+
+hr {
+    height: 1px;
+    border: none;
+    border-top: 1px solid #ccc;
+    overflow: visible;
+    width: 350px;
+    margin: 0;
+    padding: 0;
+   
+}
+
+
+
