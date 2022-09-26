@@ -1,43 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400&display=swap');html, body{
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400&display=swap');
+
+
+body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 100vh;
     font-family: 'Kumbh Sans', sans-serif;
-
-    
-    
-    
-}
-
-body {
     background-color: #f2f2f2 ;
     color: #fbfffc;
     font-size: 16px;
-    display: flex;
+    
+   
 }
 
-
-
 .grid-container {
-    min-height: auto;
+    min-height: 100vh;
     display: grid;
     max-width: 700px;
     margin: 0 auto;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows:  auto auto;
-    align-content: center;
-    justify-content: center;
-    border-radius: 10px;
-    overflow: hidden;
     grid-template-columns: 1fr;
     grid-column: 1/ span 2;
-
+    align-content: center;
+    justify-content: center;
+   
+  
 }
 
 
 .grid-col {
+ 
+
     padding: 45px;
+   
 }
 
 /* Join our community */
@@ -45,12 +40,14 @@ body {
 .grid-container div:first-child {
     background-color: #ffffff;
    grid-column: 1/ span 2;
-   color: black;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px
 
 }
 
 .grid-container div:first-child h2 {
     color: #62bcbd;
+    
     
 }
 .grid-container div:first-child p:first-of-type {
@@ -65,6 +62,8 @@ body {
 /* Monthly Subscription */
 .grid-container div:nth-child(2)  {
     background-color: #2bb3b1;
+    border-bottom-left-radius: 10px;
+
     
     } 
 
@@ -106,6 +105,8 @@ button {
 
 .grid-container div:nth-child(3)  {
     background-color: #4abebd;
+    border-bottom-right-radius: 10px;
+
 }
 
 ul {
