@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@media (max-width: 990px) {
+
+    body {
+        margin: 25px;
+    }
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .col1 img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .col2 {
+        text-align: center;
+    }
+    .social {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem
+    }
+
+    button {
+        padding: 0.8rem 5rem;
+
+
+    }
+       
+    
+}
+
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: url(images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 25px
+
+    
+}
+
+.logo {
+    width: 150px;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 35px;
+    gap: 50px;
+    
+
+}
+.col1, .col2 {
+    flex-basis: 30%;
+   
+}
+
+
+
+/* second col */
+
+.col2 {
+    padding-top: 2rem;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-family: 400;
+    color: white
+
+
+}
+
+.col2 p {
+    color: aliceblue;
+
+}
+
+button {
+    background-color: rgb(249, 249, 249);
+    border-radius: 50px;
+    border: none;
+    padding: 0.8rem 3.5rem;
+    color:hsl(257, 40%, 49%);
+    box-shadow: 0px 3px 15px hsl(300, 27%, 22%);
+    cursor: pointer;
+}
+
+button:hover {
+    color: aliceblue;
+    background-color: hsl(300, 69%, 71%);
+
+}
+
+
+/* social icons */
+
+.social {
+    margin-top: auto;
+    text-align: right;
+    padding-right: 55px;
+
+}
+
+.social img {
+
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    background-color: aliceblue;
+    border-radius: 50%;
+
+}
+
+.social img:hover {
+    background-color:  hsl(300, 69%, 71%);
+}
+
+
+/* footer */
+
+footer {
+    margin-top: auto;
+    /* background-color: hsl(256, 45%, 16%); */
+    /* padding: 1rem; */
+    color: aliceblue;
+
+
+}
+
+
+
