@@ -38,20 +38,19 @@
        
     
 }
-
-
-
+html {
+    height: 100%;
+}
 
 body {
     font-family: 'Open Sans', sans-serif;
     background: url(images/bg-desktop.svg);
     background-color: hsl(257, 40%, 49%);
-    height: 100vh;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     gap: 25px;
     margin: 15px;
-
     
 }
 
@@ -60,7 +59,7 @@ body {
 }
 
 .container {
-    height: 100vh;
+    min-height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
