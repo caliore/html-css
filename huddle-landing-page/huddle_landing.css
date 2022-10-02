@@ -118,7 +118,6 @@ button:hover {
 .social {
     margin-top: auto;
     text-align: right;
-    /* padding-right: 55px; */
 
 }
 
@@ -141,8 +140,6 @@ button:hover {
 
 footer {
     margin-top: auto;
-    /* background-color: hsl(256, 45%, 16%); */
-    /* padding: 1rem; */
     color: aliceblue;
 
 
