@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root {
+   
+    --primary-violet: hsl(263, 55%, 52%);
+    --primary-dark-blue: hsl(217, 19%, 35%);
+    --primary-blackish-blue: hsl(219, 29%, 14%);
+    --light-gray: hsl(0, 0%, 81%);
+    --light-gray-blue: hsl(210, 46%, 95%);
+    --white: hsl(0, 0%, 100%);
+    --font: 'Barlow Semi Condensed', sans-serif;
+    
+
+}
+
+
+
+html {
+    min-height: 100%;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-gray);
+    font-family: var(--font);
+    font-size: 13px;
+}
+
+.grid {
+    display: grid;
+    /* min-height: 60vh; */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    width: min(95%, 70rem);
+    margin-top: auto;
+
+    /* place-items: center; */
+}
+
+.testimonial {
+    padding: 15px;
+    border-radius: 6px;
+    line-height: 20px;
+    color: var(--light-gray);
+}
+
+
+.title {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+
+
+.grid-col-1:first-child {
+    grid-column: span 2;
+    background-image: url('images/bg-pattern-quotation.svg');
+    background-color: var(--primary-violet);
+    background-repeat: no-repeat;
+    background-position: top right 15%;
+   
+}
+
+
+.testimonial:last-child {
+    background-color: var(--white);
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row: 1 / span 2;
+}
+
+
+.testimonial:nth-child(2) {
+    background-color: var(--primary-dark-blue);}
+
+
+
+.testimonial:nth-child(4) {
+    background-color: var(--primary-blackish-blue);
+    grid-column: span 2;
+
+
+
+}
+
+.testimonial:nth-child(3) {
+    background-color: var(--white);
+    color: var(--primary-blackish-blue)
+
+
+}
+
+.testimonial:nth-child(3) > .title:nth-child(3) {
+    color: var(--primary-blackish-blue)
+
+}
+
+/* Header */
+
+.name {
+    display: flex;
+    padding: 15px;
+    justify-content: left;
+}
+
+img {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    align-self: center;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 1rem;
+    
+}
+
+
+
+
+
+/* footer */
+
+footer {
+    background-color: var(--light-gray);
+    padding: 25px;
+    width: 100%;
+    margin-top: auto;
+}
+
+
+
