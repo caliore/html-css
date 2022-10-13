@@ -14,7 +14,6 @@
 }
 
 
-
 html {
     min-height: 100%;
 }
@@ -33,13 +32,11 @@ body {
 
 .grid {
     display: grid;
-    /* min-height: 60vh; */
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
     width: min(95%, 70rem);
     margin-top: auto;
 
-    /* place-items: center; */
 }
 
 .testimonial {
@@ -50,14 +47,10 @@ body {
 }
 
 
-.title {
-    font-weight: 600;
-    font-size: 18px;
-    margin-bottom: 15px;
-}
 
 
 
+/* Daniel 1*/
 .grid-col-1:first-child {
     grid-column: span 2;
     background-image: url('images/bg-pattern-quotation.svg');
@@ -68,6 +61,38 @@ body {
 }
 
 
+
+/* Jonathan 2 */
+
+
+.testimonial:nth-child(2) {
+    background-color: var(--primary-dark-blue);
+}
+
+
+/* Jeanette 3*/
+.testimonial:nth-child(3) {
+    background-color: var(--white);
+
+}
+.testimonial:nth-child(3) ul li:first-of-type {
+    color: var(--primary-blackish-blue)
+}
+
+.testimonial:nth-child(3) .title {
+    color: var(--primary-blackish-blue)
+}
+
+
+/* Patrick 4 */
+.testimonial:nth-child(4) {
+    background-color: var(--primary-blackish-blue);
+    grid-column: span 2;
+
+}
+
+
+/* Kira 5*/
 .testimonial:last-child {
     background-color: var(--white);
     grid-column-start: 4;
@@ -75,30 +100,12 @@ body {
     grid-row: 1 / span 2;
 }
 
-
-.testimonial:nth-child(2) {
-    background-color: var(--primary-dark-blue);}
-
-
-
-.testimonial:nth-child(4) {
-    background-color: var(--primary-blackish-blue);
-    grid-column: span 2;
-
-
-
+.testimonial:nth-child(5) .title {
+    color: var(--primary-blackish-blue)
 }
 
-.testimonial:nth-child(3) {
-    background-color: var(--white);
+.testimonial:nth-child(5) ul li:first-of-type {
     color: var(--primary-blackish-blue)
-
-
-}
-
-.testimonial:nth-child(3) > .title:nth-child(3) {
-    color: var(--primary-blackish-blue)
-
 }
 
 /* Header */
@@ -121,6 +128,19 @@ ul {
     padding-left: 1rem;
     
 }
+ul li:first-child {
+    color: var(--white);
+    font-weight: 500;
+}
+
+
+.title {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--white)
+}
+
 
 
 
