@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
 
+
+
+
+
+
+
 :root {
    
     --primary-violet: hsl(263, 55%, 52%);
@@ -32,11 +38,35 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
     width: min(95%, 70rem);
     margin-top: auto;
 
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+    .grid-col-1:first-child {
+        grid-column: span 2;
+
+    }
+
+    .testimonial:nth-child(4) {
+        grid-column: span 2;
+
+    }
+    .testimonial:last-child {
+        grid-column-start: 4;
+        grid-row: 1 / span 2;
+
+    }
+
+
+    
 }
 
 .testimonial {
@@ -52,7 +82,7 @@ body {
 
 /* Daniel 1*/
 .grid-col-1:first-child {
-    grid-column: span 2;
+    
     background-image: url('images/bg-pattern-quotation.svg');
     background-color: var(--primary-violet);
     background-repeat: no-repeat;
@@ -87,7 +117,7 @@ body {
 /* Patrick 4 */
 .testimonial:nth-child(4) {
     background-color: var(--primary-blackish-blue);
-    grid-column: span 2;
+    
 
 }
 
@@ -95,9 +125,7 @@ body {
 /* Kira 5*/
 .testimonial:last-child {
     background-color: var(--white);
-    grid-column-start: 4;
-    grid-row-start: 1;
-    grid-row: 1 / span 2;
+   
 }
 
 .testimonial:nth-child(5) .title {
@@ -121,6 +149,7 @@ img {
     width: 3rem;
     height: 3rem;
     align-self: center;
+
 }
 
 ul {
@@ -140,9 +169,6 @@ ul li:first-child {
     margin-bottom: 15px;
     color: var(--white)
 }
-
-
-
 
 
 
