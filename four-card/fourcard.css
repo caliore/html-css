@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    --Dark_Blue: hsl(234, 12%, 34%);
+    --Grayish_Blue: hsl(229, 6%, 66%);
+    --Light_Gray: hsl(0, 0%, 98%);
+    --font: 15px;
+
+}
+
+
+@media (max-width: 550px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+}
+
+
+
+html {
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Light_Gray);
+    
+}
+
+
+
+main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    min-height: 500px;
+    gap: 2rem
+}
+
+main .mid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem
+
+}
+p {
+    color: var(--Grayish_Blue);
+}
+
+/* top section */
+
+section {
+    text-align: center;
+    padding: 3rem 0 ;
+
+}
+
+
+h1 {
+    font-weight: 200;
+    margin: 0;
+    font-size: 2rem;
+    color: var(--Dark_Blue);
+}
+
+h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+section p {
+    width: 50%;
+    margin: auto;
+    padding-top: 1rem;
+   
+
+}
+
+/* main articles */
+
+article{
+    padding: 25px;
+    font-size: var(--font);
+    max-width: 300px;
+    background-color: white;
+    min-height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 12px rgb(168, 178, 183),
+                 -3px 3px 35px rgb(168, 178, 183),
+                 3px 3px 15px rgb(168, 178, 183);
+  
+}
+
+
+
+article > img {
+    float: right;
+
+}
+
+/* supervisor */
+main > article:nth-child(1) {
+    border-top-color: var(--Cyan);
+    border-top-style: solid;
+}
+/* team builder */
+.mid article:first-child{
+    border-top-color: var(--Red);
+    border-top-style: solid;
+
+}
+
+/* karma */
+
+.mid article:last-child{
+    border-top-color: var(--Orange);
+    border-top-style: solid;
+
+}
+
+/* calculator */
+
+main > article:last-child {
+    border-top-color: var(--Blue);
+    border-top-style: solid;
+}
+
+
+/* footer */
+
+footer {
+    margin-top: auto;
+    
+}
+
+.attribution 
+{ font-size: 11px; 
+    text-align: center; 
+    padding-top: 17px;
+}
+.attribution a 
+{ color: hsl(228, 45%, 44%); 
+}
