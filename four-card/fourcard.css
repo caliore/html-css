@@ -97,9 +97,7 @@ article{
     background-color: white;
     min-height: auto;
     border-radius: 0.5rem;
-    box-shadow: 0 1px 12px rgb(168, 178, 183),
-                 -3px 3px 35px rgb(168, 178, 183),
-                 3px 3px 15px rgb(168, 178, 183);
+    box-shadow: 0 10px 15px rgba(2, 2, 2, 0.064);
   
 }
 
