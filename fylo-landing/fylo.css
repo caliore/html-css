@@ -17,25 +17,26 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding: 2rem;
+    /* padding: 3rem; */
+
 }
 
-main {
-    flex-grow: 1;
-}
+
 
 header {
     display: flex;
-    justify-content: space-between;
     font-family: 'Raleway', sans-serif;
     align-items: center;
     margin-bottom: 3rem;
+    padding: 0 6rem;
+
 }
 
 .nav_links {
     display: flex;
     margin-left: auto;
     gap: 3rem;
+
 }
 
 ul li {
@@ -49,21 +50,29 @@ ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     
 
 }
 
 .left {
     width: 45%;
+    padding-left: 6rem;
+
     /* align-self: center; */
 }
 
+.right {
+    padding-right: 6rem;
+
+}
 
 
 
 .illustration {
     min-width: 550px;
     max-height: 350px;
+   
 }
 
 
@@ -94,7 +103,7 @@ p {
 
 .email {
     border: 1px solid gray;
-    min-width: 55%;
+    min-width: 50%;
     padding: 0.5rem 0.8rem;
 
    
@@ -103,12 +112,14 @@ p {
 ::placeholder {
     color: hsl(0, 0%, 75%);
     text-align: left;
-    
+
 }
 
 
 
 button {
+    display: inline-block;
+    margin-top: 1rem;
     padding: 0.5rem 2.3rem;
     background-color: hsl(224, 93%, 58%);
     color: #fff;
@@ -122,3 +133,29 @@ button {
     height: 400px;
     margin-top: auto;
 } */
+
+.second {
+    background-color: hsl(240, 75%, 98%);
+
+}
+
+.second a {
+    color: hsl(170, 45%, 43%);
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    width: fit-content;
+    display: block;
+
+}
+a img {
+    position: relative;
+    top: 3px;
+}
+
+.second a::after {
+    content: "";
+    background:  hsl(170, 45%, 43%);
+    height: 1px;
+    display: block;
+    margin-top: 3px;
+}
