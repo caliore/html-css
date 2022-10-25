@@ -46,7 +46,7 @@ ul li {
 /* section 1 */
 
 .first, .second, .third {
-    min-height: 60vh;
+    min-height: 70vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -158,4 +158,132 @@ a img {
     height: 1px;
     display: block;
     margin-top: 3px;
+}
+
+/* testimonial */
+
+figure {
+    width: 70%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 2.5rem 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.075);
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+
+
+
+
+}
+figure img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 7px;
+}
+figure > ul {
+    padding-top: 5px;
+    
+}
+
+figure p.testimonial::before {
+    content: url("images/icon-quotes.svg");
+    position: absolute;
+    top: 15px;
+
+}
+
+ #name_title li{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 3px;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 10px;
+}
+
+.name {
+    font-weight: 700;
+    letter-spacing: 0.06rem;
+    color: hsl(244, 93%, 6%);
+
+}
+
+
+figure .testimonial {
+    font-size: 12px;
+    line-height: 1.3rem;
+    letter-spacing: 0.06rem;
+
+
+}
+
+/* third section */
+
+.third {
+    background-color: hsl(238, 22%, 44%);
+   
+}
+
+.third .left * {
+    color: #fff;
+}
+
+#email2 {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.secondary {
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.184);
+}
+
+
+/* footer */
+
+
+footer {
+    background-color: hsl(243, 87%, 12%);
+    color: #fff;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 16px;
+    
+
+
+    
+}
+
+.flex_box {
+    min-height: 300px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+    margin-top: auto;
+
+}
+
+.box1 .info:first-of-type a , .social a{
+    color:#fff;
+    text-decoration: none;
+}
+
+.info li {
+    margin: 1rem;
+}
+
+.info img {
+    filter:  brightness(0) invert(1);
+}
+
+.social a {
+    border: 1px solid #fff;
+    padding: 7px;
+    border-radius: 50%;
+    margin: 4px;
+
 }
