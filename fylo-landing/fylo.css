@@ -249,21 +249,34 @@ figure .testimonial {
 footer {
     background-color: hsl(243, 87%, 12%);
     color: #fff;
-     font-family: 'Open Sans', sans-serif;
-     font-size: 16px;
-    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding-top: 5rem;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+
 
 
     
 }
 
+.footer_logo {
+    margin-left: 9%;
+    filter:  brightness(0) invert(1);
+    
+
+}
+
 .flex_box {
-    min-height: 300px;
+    min-height: 200px;
     display: flex;
     /* flex-direction: column; */
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     margin-top: auto;
+    margin-left: 8%;
+
 
 }
 
@@ -276,9 +289,9 @@ footer {
     margin: 1rem;
 }
 
-.info img {
+/* .info img {
     filter:  brightness(0) invert(1);
-}
+} */
 
 .social a {
     border: 1px solid #fff;
@@ -286,4 +299,15 @@ footer {
     border-radius: 50%;
     margin: 4px;
 
+}
+
+
+.phone_icon::before {
+    content: url("images/icon-phone.svg");
+    margin-right: 1rem;
+}
+
+.email_icon::before {
+    content: url("images/icon-email.svg");
+    margin-right: 1rem;
 }
