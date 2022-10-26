@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+
+ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* padding: 3rem; */
+
+}
+
+
+
+header {
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding: 0 6rem;
+
+}
+
+.nav_links {
+    display: flex;
+    margin-left: auto;
+    gap: 3rem;
+
+}
+
+ul li {
+    list-style: none;
+}
+
+/* section 1 */
+
+.first, .second, .third {
+    min-height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+
+}
+
+.left {
+    width: 45%;
+    padding-left: 6rem;
+
+    /* align-self: center; */
+}
+
+.right {
+    padding-right: 6rem;
+
+}
+
+
+
+.illustration {
+    min-width: 550px;
+    max-height: 350px;
+   
+}
+
+
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: hsl(243, 87%, 12%);
+    line-height: 3.3rem;
+
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color:hsl(243, 87%, 12%);
+    padding: 1rem 0;
+
+}
+
+
+
+.email, .btn {
+    display: inline-block;
+    border-radius: 0;
+
+}
+
+.email {
+    border: 1px solid gray;
+    min-width: 50%;
+    padding: 0.5rem 0.8rem;
+
+   
+}
+
+::placeholder {
+    color: hsl(0, 0%, 75%);
+    text-align: left;
+
+}
+
+
+
+button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 2.3rem;
+    background-color: hsl(224, 93%, 58%);
+    color: #fff;
+    border: 1px solid hsl(224, 93%, 58%);
+    font-family: 'Raleway', sans-serif;
+    min-width: 30%;
+    font-weight: 700;
+}
+
+/* footer {
+    height: 400px;
+    margin-top: auto;
+} */
+
+.second {
+    background-color: hsl(240, 75%, 98%);
+
+}
+
+.second a {
+    color: hsl(170, 45%, 43%);
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    width: fit-content;
+    display: block;
+
+}
+a img {
+    position: relative;
+    top: 3px;
+}
+
+.second a::after {
+    content: "";
+    background:  hsl(170, 45%, 43%);
+    height: 1px;
+    display: block;
+    margin-top: 3px;
+}
+
+/* testimonial */
+
+figure {
+    width: 70%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 2.5rem 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.075);
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+
+
+
+
+}
+figure img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 7px;
+}
+figure > ul {
+    padding-top: 5px;
+    
+}
+
+figure p.testimonial::before {
+    content: url("images/icon-quotes.svg");
+    position: absolute;
+    top: 15px;
+
+}
+
+ #name_title li{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 3px;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 10px;
+}
+
+.name {
+    font-weight: 700;
+    letter-spacing: 0.06rem;
+    color: hsl(244, 93%, 6%);
+
+}
+
+
+figure .testimonial {
+    font-size: 12px;
+    line-height: 1.3rem;
+    letter-spacing: 0.06rem;
+
+
+}
+
+/* third section */
+
+.third {
+    background-color: hsl(238, 22%, 44%);
+   
+}
+
+.third .left * {
+    color: #fff;
+}
+
+#email2 {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.secondary {
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.184);
+}
+
+
+/* footer */
+
+
+footer {
+    background-color: hsl(243, 87%, 12%);
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding-top: 5rem;
+
+    
+}
+
+.footer_logo {
+    margin-left: 9%;
+    filter:  brightness(0) invert(1);
+    
+
+}
+
+.flex_box {
+    min-height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: auto;
+    margin-left: 8%;
+
+
+}
+
+.box1 .info:first-of-type a , .social a{
+    color:#fff;
+    text-decoration: none;
+}
+
+.info li {
+    margin: 1rem;
+}
+
+.social a {
+    border: 1px solid #fff;
+    padding: 7px;
+    border-radius: 50%;
+    margin: 4px;
+
+}
+
+
+.phone_icon::before {
+    content: url("images/icon-phone.svg");
+    margin-right: 1rem;
+}
+
+.email_icon::before {
+    content: url("images/icon-email.svg");
+    margin-right: 1rem;
+}
